@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil SPA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="site">
+  <div class="layout">
+    <header class="layout__header">
+      <img src="assets/logo-removebg-preview (4).png" alt="Logo" class="layout__logo" />
+      <h1 class="layout__title">Mi Perfil</h1>
+      <input type="search" class="layout__search" placeholder="Buscar..." />
+    </header>
+
+    <main class="layout__main">
+      <div class="main__wrapper">
+        <aside class="profile">
+          <img src="assets/Avartar-removebg-preview.png" alt="Foto de perfil" class="profile__avatar" />
+          <h2 class="profile__name">Jonathan</h2>
+          <p class="profile__bio">Desarrollador web apasionado por el diseño y la tecnología.</p>
+
+          <h3 class="profile__friends-title">Amigos</h3>
+          <div class="profile__friends">
+            <div class="profile__friend"></div>
+            <div class="profile__friend"></div>
+            <div class="profile__friend"></div>
+            <div class="profile__friend"></div>
+            <div class="profile__friend"></div>
+            <div class="profile__friend"></div>
+          </div>
+        </aside>
+
+        <section class="main__content">
+          <nav id="app-nav" class="nav">
+            <a href="#home" class="nav__link">Muro</a>
+            <a href="#about" class="nav__link">Info</a>
+            <a href="#photos" class="nav__link">Photos</a>
+            <a href="#boxes" class="nav__link">Boxes</a>
+          </nav>
+
+          <section id="app-content" class="content">
+            <!-- Aquí se renderiza dinámicamente cada vista -->
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="layout__footer">
+      <p class="layout__footer-text">© 2025 Jonathan SPA</p>
+    </footer>
+  </div>
+
+  <script src="router.js"></script>
+</body>
+</html>
